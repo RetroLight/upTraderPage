@@ -1,0 +1,316 @@
+.container {
+  max-width: 1201px;
+  margin: 0 auto; }
+
+.mobile_tick {
+  display: none; }
+
+.mobile_block_info {
+  display: none; }
+
+.mob {
+  position: relative;
+  cursor: pointer; }
+
+.mob:hover .hover-circle, .mob:hover .hover-circle_3 {
+  display: block; }
+
+.hover-circle {
+  top: 2.5px;
+  left: 3px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 2px solid #009e82;
+  position: absolute;
+  display: none; }
+
+.hover-circle_3 {
+  top: 3px;
+  left: 29px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 2px solid #009e82;
+  position: absolute;
+  display: none; }
+
+.first_block {
+  background: url("../img/first_block/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .first_block h1 {
+    padding-top: 270px;
+    text-align: center;
+    color: #171717;
+    font-family: "PF DinDisplay Pro", sans-serif;
+    font-size: 41px;
+    font-weight: 300; }
+  .first_block .choose_block {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .first_block .choose_block_element {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      opacity: 0.5;
+      text-align: center;
+      margin-bottom: 200px; }
+      .first_block .choose_block_element img {
+        padding-top: 30%;
+        z-index: 2; }
+      .first_block .choose_block_element .third_child {
+        padding-top: 25%; }
+      .first_block .choose_block_element p {
+        margin-top: 43px;
+        color: #242424;
+        font-family: "PF DinDisplay Pro", sans-serif;
+        font-size: 24px;
+        font-weight: 300; }
+    .first_block .choose_block .involve_investors {
+      margin-left: 7%; }
+    .first_block .choose_block .mobile_choose_block_version {
+      display: none; }
+
+.second_block {
+  background: url("../img/second_block/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .second_block_menu {
+    border-bottom: 2px solid #d1d1cb; }
+    .second_block_menu_nav {
+      display: flex;
+      justify-content: space-between; }
+      .second_block_menu_nav li:after {
+        background-color: #009e82;
+        display: block;
+        content: "";
+        height: 3px;
+        width: 0%;
+        left: 50%;
+        position: absolute;
+        transition: width 0.2s ease-in-out;
+        transform: translateX(-50%) translateY(26px); }
+      .second_block_menu_nav li:hover:after {
+        width: 100%; }
+      .second_block_menu_nav li:hover a {
+        color: #009e82; }
+      .second_block_menu_nav li {
+        cursor: pointer;
+        position: relative;
+        width: 33.2%;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 25px; }
+        .second_block_menu_nav li a {
+          text-decoration: none;
+          color: #242424;
+          font-family: "PF DinDisplay Pro", sans-serif;
+          font-size: 24px;
+          font-weight: 300; }
+  .second_block_content {
+    margin-top: 90px; }
+    .second_block_content .intro {
+      margin-left: 0px;
+      width: 60%;
+      color: #1c1c1c;
+      font-family: "PF DinDisplay Pro", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px; }
+    .second_block_content h3 {
+      margin-top: 47px;
+      color: #171717;
+      font-family: "PF DinDisplay Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 300; }
+    .second_block_content ol {
+      margin-left: 25px;
+      width: 60%;
+      margin-top: 30px;
+      list-style-type: decimal; }
+      .second_block_content ol li {
+        color: #00b596;
+        font-family: "PF DinDisplay Pro", sans-serif;
+        font-size: 32px;
+        font-weight: 300;
+        margin-top: 20px; }
+        .second_block_content ol li span {
+          color: #1d1d1d;
+          font-family: "PF DinDisplay Pro", sans-serif;
+          font-size: 18px;
+          font-weight: 300; }
+    .second_block_content .continue_button {
+      margin-left: 0px;
+      border-radius: 3px;
+      background-color: #009e82;
+      margin-top: 44px;
+      border: none;
+      padding: 12px 28px 10px 29px;
+      color: #feffff;
+      font-family: "PF DinDisplay Pro", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 221px; }
+    .second_block_content .continue_button:hover {
+      background-color: #006b58; }
+    .second_block_content .continue_button:active {
+      background-color: #005243; }
+
+@media(min-width:415px) and (max-width:1221px) {
+  .choose_block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .choose_block_element {
+      margin-bottom: 20px !important; }
+    .choose_block .involve_investors {
+      margin-left: 0px !important; }
+
+  .second_block_content {
+    margin-left: 50px; } }
+@media(max-width:414px) {
+  body .hover-circle, body .hover-circle_3 {
+    display: none !important; }
+  body .mob {
+    width: 100%; }
+  body .mobile_block_bg {
+    display: none;
+    background: url("../img/mobile_bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 350px;
+    margin-bottom: 25px;
+    margin-top: -100px; }
+  body .first_block {
+    height: 100vh; }
+    body .first_block .container {
+      max-width: 100%; }
+      body .first_block .container h1 {
+        font-size: 36px;
+        padding-top: 55px; }
+    body .first_block .choose_block {
+      margin-top: 24px; }
+      body .first_block .choose_block_element {
+        position: relative;
+        width: 93%;
+        height: auto;
+        display: flex;
+        border-radius: 0;
+        margin-bottom: 7%;
+        margin-left: 3%; }
+        body .first_block .choose_block_element img {
+          width: 35px;
+          height: 29px;
+          padding: 21px 19px 19px 20px; }
+        body .first_block .choose_block_element .third_child {
+          padding: 21px 19px 19px 20px;
+          width: 30px;
+          height: 36px; }
+        body .first_block .choose_block_element p {
+          margin-top: 7%;
+          font-size: 19px; }
+        body .first_block .choose_block_element .mobile_tick {
+          display: block;
+          width: 19px;
+          height: 10px;
+          position: absolute;
+          right: 0px;
+          top: 10px; }
+      body .first_block .choose_block .involve_investors {
+        margin-left: 3%; }
+      body .first_block .choose_block .trade {
+        display: none; }
+      body .first_block .choose_block .mobile_choose_block_version {
+        width: 93% !important;
+        margin-left: 3%;
+        position: relative;
+        background-color: #ffffff;
+        opacity: 0.5;
+        width: 100%;
+        height: auto;
+        display: flex;
+        border-radius: 0;
+        margin-bottom: 7%; }
+        body .first_block .choose_block .mobile_choose_block_version img {
+          width: 35px;
+          height: 29px;
+          padding: 21px 19px 19px 20px; }
+        body .first_block .choose_block .mobile_choose_block_version .third_child {
+          padding: 21px 19px 19px 20px;
+          width: 30px;
+          height: 36px; }
+        body .first_block .choose_block .mobile_choose_block_version p {
+          margin-top: 43px;
+          color: #242424;
+          font-family: "PF DinDisplay Pro", sans-serif;
+          font-size: 24px;
+          font-weight: 300;
+          margin-top: 7%;
+          font-size: 19px; }
+        body .first_block .choose_block .mobile_choose_block_version .mobile_tick {
+          display: block;
+          position: absolute;
+          right: 0px;
+          top: 10px;
+          width: 19px;
+          height: 10px; }
+      body .first_block .choose_block .mobile_block_info {
+        display: none; }
+        body .first_block .choose_block .mobile_block_info .intro {
+          margin: 0 auto;
+          text-align: center;
+          width: 90%;
+          color: #1c1c1c;
+          font-family: "PF DinDisplay Pro", sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 24px; }
+        body .first_block .choose_block .mobile_block_info h3 {
+          text-align: center;
+          margin-top: 47px;
+          color: #171717;
+          font-family: "PF DinDisplay Pro", sans-serif;
+          font-size: 24px;
+          font-weight: 300; }
+        body .first_block .choose_block .mobile_block_info ol {
+          margin-left: 50px;
+          width: 75%;
+          margin-top: 30px;
+          list-style-type: decimal; }
+          body .first_block .choose_block .mobile_block_info ol li {
+            color: #00b596;
+            font-family: "PF DinDisplay Pro", sans-serif;
+            font-size: 32px;
+            font-weight: 300;
+            margin-top: 20px;
+            line-height: 14px; }
+            body .first_block .choose_block .mobile_block_info ol li span {
+              color: #1d1d1d;
+              font-family: "PF DinDisplay Pro", sans-serif;
+              font-size: 16px;
+              font-weight: 300; }
+        body .first_block .choose_block .mobile_block_info .continue_button {
+          margin-left: 20px;
+          border-radius: 3px;
+          background-color: #009e82;
+          margin-top: 44px;
+          border: none;
+          padding: 12px 28px 10px 29px;
+          color: #feffff;
+          font-family: "PF DinDisplay Pro", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 0px; }
+        body .first_block .choose_block .mobile_block_info .continue_button:hover {
+          background-color: #006b58; }
+        body .first_block .choose_block .mobile_block_info .continue_button:active {
+          background-color: #005243; }
+  body .second_block {
+    display: none; } }
+
+/*# sourceMappingURL=main.css.map */

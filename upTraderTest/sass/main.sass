@@ -1,0 +1,173 @@
+.container
+	max-width: 1201px
+	margin: 0 auto
+.mobile_tick
+	display: none
+.mobile_block_info
+	display: none
+.mob
+	position: relative
+	cursor: pointer
+.mob:hover
+	.hover-circle, .hover-circle_3
+		display: block
+.hover-circle
+	top: 2.5px
+	left: 3px
+	width: 340px
+	height: 340px
+	border-radius: 50%
+	border: 2px solid #009e82
+	position: absolute
+	display: none
+.hover-circle_3
+	top: 3px
+	left: 29px
+	width: 340px
+	height: 340px
+	border-radius: 50%
+	border: 2px solid #009e82
+	position: absolute
+	display: none
+
+.first_block
+	background: url("../img/first_block/bg.png")
+	background-repeat: no-repeat
+	background-size: cover	
+	h1
+		padding-top: 270px
+		text-align: center
+		color: #171717
+		font-family: "PF DinDisplay Pro", sans-serif
+		font-size: 41px
+		font-weight: 300
+	.choose_block
+		width: 100%
+		margin-top: 80px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between			
+		&_element		
+			width: 350px
+			height: 350px
+			border-radius: 50%
+			background-color: #ffffff
+			opacity: 0.5
+			text-align: center
+			margin-bottom: 200px	
+			img
+				padding-top: 30%
+				z-index: 2	
+			.third_child
+				padding-top: 25%
+			p
+				margin-top: 43px
+				color: #242424
+				font-family: "PF DinDisplay Pro", sans-serif
+				font-size: 24px
+				font-weight: 300		
+		.involve_investors		
+			margin-left: 7%
+		.mobile_choose_block_version
+			display: none
+
+.second_block
+	background: url("../img/second_block/bg.png")
+	background-repeat: no-repeat
+	background-size: cover
+	&_menu
+		border-bottom: 2px solid #d1d1cb
+		&_nav
+			display: flex
+			justify-content: space-between
+			li:after
+				background-color: #009e82
+				display: block
+				content: ""
+				height: 3px
+				width: 0%
+				left: 50%
+				position: absolute				
+				transition: width .2s ease-in-out				
+				transform: translateX(-50%) translateY(26px)	    
+			li:hover:after
+				width: 100%		
+			li:hover
+				a 
+					color: #009e82
+			li
+				cursor: pointer
+				position: relative
+				width: 33.2%				
+				text-align: center
+				padding-top: 35px
+				padding-bottom: 25px
+				a 
+					text-decoration: none
+					color: #242424
+					font-family: "PF DinDisplay Pro", sans-serif
+					font-size: 24px
+					font-weight: 300			
+
+	&_content
+		margin-top: 90px
+		.intro
+			margin-left: 0px
+			width: 60%
+			color: #1c1c1c
+			font-family: "PF DinDisplay Pro", sans-serif
+			font-size: 18px
+			font-weight: 300
+			line-height: 24px
+		h3
+			margin-top: 47px
+			color: #171717
+			font-family: "PF DinDisplay Pro", sans-serif
+			font-size: 24px
+			font-weight: 300
+		ol			
+			margin-left: 25px
+			width: 60%
+			margin-top: 30px
+			list-style-type: decimal
+			li
+				color: #00b596
+				font-family: "PF DinDisplay Pro", sans-serif
+				font-size: 32px
+				font-weight: 300				
+				margin-top: 20px
+				span					
+					color: #1d1d1d
+					font-family: "PF DinDisplay Pro", sans-serif
+					font-size: 18px
+					font-weight: 300
+		.continue_button
+			margin-left: 0px
+			border-radius: 3px
+			background-color: #009e82
+			margin-top: 44px
+			border: none
+			padding: 12px 28px 10px 29px
+			color: #feffff
+			font-family: "PF DinDisplay Pro", sans-serif
+			font-size: 18px
+			font-weight: 500
+			margin-bottom: 221px
+		.continue_button:hover
+			background-color: darken(#009e82, 10%)
+		.continue_button:active
+			background-color: darken(#009e82, 15%)
+
+@import "_media.sass"
+
+
+
+					
+
+
+
+
+
+
+
+			
